@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Counter</title>
+    <style>body {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    background-color: #00de9b;
+}
+</style>
+</head>
+<body>
+	  
+	<div class="number" data-max="500">0</div>
+
+	<script>
+		var number = document.querySelectorAll('#n1'),
+		numberTop = number.getBoundingClientRect().top,
+		start = +number.innerHTML, end = +number.dataset.max;
+
+		window.addEventListener('scroll', function onScroll() {
+			if(window.pageYOffset > numberTop - window.innerHeight / 2) {
+				this.removeEventListener('scroll', onScroll);
+				var interval = setInterval(function() {
+					number.innerHTML = ++start;
+					if(start == end) {
+						clearInterval(interval);
+					}
+				}, 5);
+			}
+		});
+	</script>
+
+</body>
+</html>
