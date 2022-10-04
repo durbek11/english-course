@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<script src="https://kit.fontawesome.com/b356ad9dc8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <!--bootstrap links started-->
-    <link rel="stylesheet" href="../animate.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="./main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<!--bootstrap links started-->
+	<link rel="stylesheet" href="../animate.css">
 </head>
+
 <body>
-	hewef32t34t34t43t4t43t4t4
+
 	<div class="sing-in-form">
 		<div class="main-register wow bounceInDown" data-wow-delay=".15">
-			<a href="../index.html" class="back"><i class="fa-regular fa-circle-xmark fa-xl  fa-fade" style="--fa-animation-duration: .4s;"></i></a>
+			<a href="../index.html" class="back"><i class="fa-regular fa-circle-xmark fa-xl  fa-fade"
+					style="--fa-animation-duration: .4s;"></i></a>
 			<div class="bnt-group">
 				<div id="btn"></div>
-				<button class="button-login" onclick="login()" id="login" style="color: #fff;" type="button">Log in</button>
+				<button class="button-login" onclick="login()" id="login" style="color: #fff;" type="button">Log
+					in</button>
 				<button class="button-login" onclick="register()" id="singupto" type="button">Sing up</button>
 			</div>
 			<form id="loginto" class="log-in">
@@ -42,7 +47,8 @@
 				<input class="input-field" type="password" placeholder="create password" required>
 				<input type="checkbox" class="checkbox"><span>I am agree to terms conditions</span>
 				<button type="submit" class="submit-btn">Sing Up</button>
-				<span class="helptouser">Already have an account?⠀<a class="help-info" href="#loginto"> Log in</a></span>
+				<span class="helptouser">Already have an account?⠀<a class="help-info" href="#loginto"> Log
+						in</a></span>
 			</form>
 			<span class="or" id="with">with</span>
 			<div class="more">
@@ -61,26 +67,26 @@
 
 <script>
 	new WOW().init();
-let x = document.getElementById(`loginto`);
-let y = document.getElementById(`singup`);
-let v = document.getElementById(`btn`);
-let login1 = document.getElementById(`login`)
-let singup = document.getElementById(`singupto`)
+	let x = document.getElementById(`loginto`);
+	let y = document.getElementById(`singup`);
+	let v = document.getElementById(`btn`);
+	let login1 = document.getElementById(`login`)
+	let singup = document.getElementById(`singupto`)
 
-function register(){
-    x.style.left = `-400%`;
-    y.style.left = `13%`;
-    v.style.left = `110px`;
-	singup.style.color=`white`;
-	login1.style.color=`#000`
-}
-function login(){
-    x.style.left = `13%`;
-    y.style.left = `450%`;
-    v.style.left = `0px`;
-	login1.style.color=`white`;
-	singup.style.color=`#000`
-}
+	function register() {
+		x.style.left = `-400%`;
+		y.style.left = `13%`;
+		v.style.left = `110px`;
+		singup.style.color = `white`;
+		login1.style.color = `#000`
+	}
+	function login() {
+		x.style.left = `13%`;
+		y.style.left = `450%`;
+		v.style.left = `0px`;
+		login1.style.color = `white`;
+		singup.style.color = `#000`
+	}
 </script>
 
 
